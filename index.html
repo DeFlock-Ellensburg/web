@@ -1,59 +1,102 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>DeFlock Ellensburg</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      html, body { margin:0; padding:0; background:#e9f6ef; }
-      canvas { display:block; margin: 24px auto; box-shadow: 0 10px 30px rgba(0,0,0,0.12); border-radius: 12px; }
-    </style>
-  </head>
-  <body>
-     <h1>DeFlock Ellensburg, Wa</h1>
-     <a href="#">What is it?</a>
-     <a href="#">Where are they?</a>
-     <a href="#">Take Action</a>
+    <head>
+        <meta charset="utf-8"/>
+        <title>DeFlock Ellensburg</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                background: #e9f6ef;
+            }
+            canvas {
+                display: block;
+                margin: 24px auto;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+                border-radius: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainPageContent">
+            <h1 id="mainTitle">DeFlock Ellensburg, Wa</h1>
+            <div id="mainLinkMenu">
+                <a href="#">What is it?</a>
+                <a href="#">Where are they?</a>
+                <a href="#">Take Action</a>
+            </div>
+            <div id="mainContentArea">
+                <div id="WhatIsSection">
+                    <h2>What is Flock Saftey?</h2>
+                    <p>Flock is a privately owned company that operates a nationwide network of Automatic License Plate Recognition (ALPR) cameras.
+                        <em>Flock is building a database of where everyone travels, accessible without a warrant, regardless of whether you have committed a crime.</em>
+                        They have been used by ICE<sup>
+                            <a href="https://www.king5.com/article/news/investigations/investigators/federal-immigration-accessed-washington-state-license-plate-readers/281-93b1edfe-f761-4e3f-9118-ed72e04c1864">[1]</a>
+                        </sup>
+                        in violation of Washington law. They have been used to track women<sup>
+                            <a href="https://www.eff.org/deeplinks/2025/10/flock-safety-and-texas-sheriff-claimed-license-plate-search-was-missing-person-it">[2]</a>
+                        </sup>
+                        who sought reproductive healthcare. They have been used to stalk partners of law enforcement<sup>
+                            <a href="https://www.kwch.com/2022/10/31/kechi-police-lieutenant-arrested-using-police-technology-stalk-wife/">[3]</a>
+                            <a href="https://www.yahoo.com/news/kansas-police-chief-used-flock-093300946.html">[4]</a>
+                            <a href="https://www.fox5vegas.com/2024/02/16/las-vegas-police-officer-arrested-reportedly-stalking-ex-fiancee/?outputType=amp">[5]</a>
+                        </sup>
+                    </p>
+                </div>
+                <div id="2colContainer">
+                    <div><img src="flockcampole.jpeg" alt="flockalprimg"/></div>
+                    <div id="whatAreALPR">
+                        <h2>What are ALPRs?</h2>
+                        <p>Automated License Plate Readers (ALPRs) are AI-powered cameras that capture and analyze images of all passing vehicles, storing details like your car's location, date, and time. They also capture your car's make, model, color, and identifying features such as dents, roof racks, and bumper stickers, often turning these into searchable data points. These cameras collect data on millions of vehicles—regardless of whether the driver is suspected of a crime. While these systems can be useful for tracking stolen cars or wanted individuals, they are mostly used to track the movements of innocent people.</p>
+                    </div>
+                    <div id="whereAreALPR">
+                        <h2>Where are they?</h2>
+                        <p>TODO: Finish map of Eburg ALPRS</p>
+                        4 of 13 mapped...
+                                                                        4 at intersection of University and Main. One in each direction.
+                    </div>
+                    <div id="learnMore">
+                        <h2>Learn More</h2>
+                        <a href="https://ellensburgwa.portal.civicclerk.com/search?q=flock">Ellensburg City Council Flock Mention History</a>
 
-     <div>
-        <h2>What is Flock?</h2>
-        <p>Flock is a privately owned company that operates a nationwide network of Automatic License Plate Recognition (ALPR) cameras. <em>Flock is building a database of where everyone travels, accessible without a warrant, regardless of whether you have committed a crime.</em> They have been used by ICE<sup><a href="https://www.king5.com/article/news/investigations/investigators/federal-immigration-accessed-washington-state-license-plate-readers/281-93b1edfe-f761-4e3f-9118-ed72e04c1864">[1]</a></sup> in violation of Washington law. They have been used to track women<sup><a href="https://www.eff.org/deeplinks/2025/10/flock-safety-and-texas-sheriff-claimed-license-plate-search-was-missing-person-it">[2]</a></sup> who sought reproductive healthcare. They have been used to stalk partners of law enforcement<sup><a href="https://www.kwch.com/2022/10/31/kechi-police-lieutenant-arrested-using-police-technology-stalk-wife/">[3]</a><a href="https://www.yahoo.com/news/kansas-police-chief-used-flock-093300946.html">[4]</a><a href="https://www.fox5vegas.com/2024/02/16/las-vegas-police-officer-arrested-reportedly-stalking-ex-fiancee/?outputType=amp">[5]</a></sup></p>
-        <h2>What are ALPRs?</h2>
-        <p>Automated License Plate Readers (ALPRs) are AI-powered cameras that capture and analyze images of all passing vehicles, storing details like your car's location, date, and time. They also capture your car's make, model, color, and identifying features such as dents, roof racks, and bumper stickers, often turning these into searchable data points. These cameras collect data on millions of vehicles—regardless of whether the driver is suspected of a crime. While these systems can be useful for tracking stolen cars or wanted individuals, they are mostly used to track the movements of innocent people.</p>
-        <h2>Where are they?</h2>
-        <p>TODO: Finish map of Eburg ALPRS</p>
-        4 of 13 mapped...
-        4 at intersection of University and Main. One in each direction.
-
-        <h2>Learn More</h2>
-        <a href="https://ellensburgwa.portal.civicclerk.com/search?q=flock">Ellensburg City Council Flock Mention History</a>
-
-        <p>ALPRs are a serious risk to your privacy and civil liberties. These systems continuously record people's movements, often without a warrant, probable cause, or even reasonable suspicion. Your driving history is rarely confined to the town or city where the cameras are installed. It's typically shared with thousands of other agencies nationwide (secretly). Once the data is out of your community, you have no control over how it's used or what rules apply. And once this kind of tracking infrastructure exists, there are no guarantees it will only be used against criminals.</p>
-        <h3><strong>Your Location Data is Not Safe from Misuse and Sharing</strong></h3>
+                        <p>ALPRs are a serious risk to your privacy and civil liberties. These systems continuously record people's movements, often without a warrant, probable cause, or even reasonable suspicion. Your driving history is rarely confined to the town or city where the cameras are installed. It's typically shared with thousands of other agencies nationwide (secretly). Once the data is out of your community, you have no control over how it's used or what rules apply. And once this kind of tracking infrastructure exists, there are no guarantees it will only be used against criminals.</p>
+                    </div>
+                    <div id="dataSafteyWarn">
+                        <h3>
+                            <strong>Your Location Data is Not Safe from Misuse and Sharing</strong>
+                        </h3>
 
 
-
-<p>Flock claims our data is safe, but Flock&rsquo;s system is designed for mass sharing. The data can be saved indefinitely and shared with hundreds of outside agencies, including ICE, putting our immigrant neighbors at direct risk.</p>
-
+                        <p>Flock claims our data is safe, but Flock&rsquo;s system is designed for mass sharing. The data can be saved indefinitely and shared with hundreds of outside agencies, including ICE, putting our immigrant neighbors at direct risk.</p>
 
 
-<ul>
-<li>A 2023 report found that ICE accessed license plate data from sanctuary cities, undermining state law and local trust<sup><a href="https://www.wired.com/story/ice-agent-database-abuse-records/">[8]</a></sup>.</li>
+                        <ul>
+                            <li>A 2023 report found that ICE accessed license plate data from sanctuary cities, undermining state law and local trust<sup>
+                                    <a href="https://www.wired.com/story/ice-agent-database-abuse-records/">[8]</a>
+                                </sup>.</li>
 
 
-
-<li>Federal agencies have been found to use logins provided by local law enforcement to circumvent restrictions on federal information sharing<sup><a href="https://unraveledpress.com/a-dea-agent-used-an-illinois-police-officers-flock-license-plate-reader-password-for-unauthorized-immigration-enforcement-searches/">[9]</a></sup>.</li>
-
-
-
-<li>Similar systems have been hacked, resulting in exposure of their databases<sup><a href="https://www.washingtonpost.com/technology/2019/07/02/border-surveillance-subcontractor-suspended-after-cyberattack-misuse-traveler-images/">[10]</a></sup>.</li>
+                            <li>Federal agencies have been found to use logins provided by local law enforcement to circumvent restrictions on federal information sharing<sup>
+                                    <a href="https://unraveledpress.com/a-dea-agent-used-an-illinois-police-officers-flock-license-plate-reader-password-for-unauthorized-immigration-enforcement-searches/">[9]</a>
+                                </sup>.</li>
 
 
+                            <li>Similar systems have been hacked, resulting in exposure of their databases<sup>
+                                    <a href="https://www.washingtonpost.com/technology/2019/07/02/border-surveillance-subcontractor-suspended-after-cyberattack-misuse-traveler-images/">[10]</a>
+                                </sup>.</li>
 
-<li>Many cities are ending their contracts specifically to concerns that data will be used against our neighbors<sup><a href="https://www.eff.org/deeplinks/2019/08/communities-across-country-reject-automated-license-plate-readers">[11]</a></sup>.</li>
-</ul>
-    </div>
-     <!--<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.min.js"></script>
-     <script type="module" src="src/sketch.js"></script>-->
-  </body>
+
+                            <li>Many cities are ending their contracts specifically to concerns that data will be used against our neighbors<sup>
+                                    <a href="https://www.eff.org/deeplinks/2019/08/communities-across-country-reject-automated-license-plate-readers">[11]</a>
+                                </sup>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.min.js"></script>
+                             <script type="module" src="src/sketch.js"></script>-->
+    </body>
 </html>
